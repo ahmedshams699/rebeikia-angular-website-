@@ -1,0 +1,160 @@
+
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_topline cs two_color section_padding_top_5 section_padding_bottom_5 table_section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 text-center text-sm-left">
+							<p class="divided-content">
+					<span class="medium black">
+						Welcome to Rebeikia
+					</span>
+					<a href="#">How to Find Us</a>
+					<a href="#">Give Feedback</a>
+				</p>
+						</div>
+						<div class="col-sm-6 text-center text-sm-right">
+
+							<div class="widget widget_search">
+								<form method="get" class="searchform form-inline" action="./">
+									<div class="form-group-wrap">
+										<div class="form-group margin_0">
+											<label class="sr-only" for="topline-search">Search for:</label>
+											<input id="topline-search" type="text" value="" name="search" class="form-control" placeholder="Search Keyword">
+										</div>
+										<button type="submit" class="theme_button">Search</button>
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<header class="page_header header_white toggler_xs_right section_padding_20">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell">
+								<a href="./" class="logo top_logo">
+									<img src="../../assets/images/logoooooooooooo.png" alt="">
+									<span class="logo_text">
+										<span class="big">Rebeikia</span>
+										<span class="small-text">Turn Trash Into Cash</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li class="active">
+											<a href="">{{"Home"|translate}}</a>
+											<!-- <ul>
+												<li>
+													<a href="index.html">{{"MultiPage"|translate}}</a>
+												</li>
+												<li>
+													<a href="index_static.html">{{"Static Intro"|translate}}</a>
+												</li>
+												<li>
+													<a href="index_singlepage.html">{{"Single Page"}}</a>
+												</li>
+												<li>
+													<a href="admin_index.html">Admin Dashboard</a>
+												</li>
+											</ul> -->
+										</li>
+
+
+										<li>
+											<a [routerLink]="['/service']" >{{"Services"|translate}}</a>
+										</li>
+
+										<li>
+											<a [routerLink]="['/about']" >{{"about"|translate}}</a>
+										</li>
+
+										<li>
+											<a [routerLink]="['/contact']" >{{"contact"|translate}}</a>
+										</li>
+
+									 
+								  
+											
+												<select  #selectedLang (change)="switchLang(selectedLang.value)">
+													<option *ngFor="let language of translate.getLangs()" [value]="language"
+													  [selected]="language === translate.currentLang">
+													  {{ language }}
+													</option>
+												  </select>
+											
+									 
+ 
+
+									</ul>
+									
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler -->
+								<span class="toggle_menu">
+									<span></span>
+								</span>
+							</div>
+
+							<div class="header_right_buttons display_table_cell text-right hidden-xs">
+								<div class="darklinks">
+									<a href="https://www.facebook.com/Rebeikia/" class="social-icon border-icon rounded-icon soc-facebook"></a>
+									<a href="https://twitter.com/rebeikia" class="social-icon border-icon rounded-icon soc-twitter"></a>
+                                    <a href="https://instagram.com/rebeikia?igshid=1q5fuyv40lh35" class="social-icon soc-instagram border-icon rounded-icon"></a>
+                                    <a href="https://www.linkedin.com/company/rebeika" class="social-icon soc-linkedin border-icon rounded-icon"></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
